@@ -5,10 +5,7 @@ public class Employee {
     char gender;
 
     public Employee() {
-        this.firstName = "John";
-        this.lastName = "Doe";
-        this.age = 25;
-        this.gender = 'M';
+        this("John", "Doe", (byte) 30, 'M');
         System.out.println("Employee object created!");
     }
 
