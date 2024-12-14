@@ -1,13 +1,21 @@
 public class Car {
+    static final byte NO_OF_WHEELS = 4;
     String model;
     String color;
     int horsePower;
 
     {
-        model = "Toyota";
-        color = "Red";
-        horsePower = 200;
         System.out.println("Car object created!");
+    }
+
+    public Car() {
+        this("Toyota", "Red", 200);
+    }
+
+    public Car(String model, String color, int horsePower) {
+        this.model = model;
+        this.color = color;
+        this.horsePower = horsePower;
     }
 
     public void startCar() {

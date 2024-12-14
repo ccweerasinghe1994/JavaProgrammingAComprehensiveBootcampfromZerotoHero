@@ -1,8 +1,13 @@
 public class Employee {
+    static final String EMPLOYER = "ABC Company";
     String firstName;
     String lastName;
     byte age;
     char gender;
+
+    {
+        System.out.println("Employee object created!");
+    }
 
     public Employee() {
         this("John", "Doe", (byte) 30, 'M');
