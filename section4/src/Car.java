@@ -1,5 +1,12 @@
 public class Car {
     static final byte NO_OF_WHEELS = 4;
+    static int numberOfEngine;
+
+    static {
+        System.out.println("Car class loaded!");
+        numberOfEngine = 1;
+    }
+
     String model;
     String color;
     int horsePower;
