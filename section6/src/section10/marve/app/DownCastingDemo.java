@@ -13,8 +13,12 @@ public class DownCastingDemo {
 
         animal = cat; // Upcasting
         cat = (Cat) animal; // Downcasting
+        AnimalUtility.peformAction(cat);
 
-        Dog dog = (Dog) animal;
+        if (animal instanceof Dog) {
+            Dog dog = (Dog) animal;
+            AnimalUtility.peformAction(dog);
+        }
     }
 
 
