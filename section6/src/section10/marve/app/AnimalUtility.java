@@ -15,10 +15,7 @@ public class AnimalUtility {
         if (animal instanceof Cat) {
             Cat cat = (Cat) animal;
             cat.meow();
-        }
-
-        if (animal instanceof Dog) {
-            Dog dog = (Dog) animal;
+        } else if (animal instanceof Dog dog) {
             dog.bark();
         }
     }
