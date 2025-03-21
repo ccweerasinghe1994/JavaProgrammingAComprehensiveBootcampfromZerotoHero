@@ -19,6 +19,14 @@ public class IronMan extends Person {
         System.out.println("IronMan Eating " + food);
     }
 
+    private void eat() {
+        System.out.println("IronMan Eating Overloaded");
+    }
+
+    public void eat(String food, String drink) {
+        System.out.println("IronMan Eating " + food + " and " + drink);
+    }
+
     public void callSuperEat() {
         super.eat("Pizza");
     }
