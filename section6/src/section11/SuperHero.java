@@ -1,6 +1,6 @@
 package section11;
 
-public interface SuperHero {
+public interface SuperHero extends Person {
     String usePower();
 
     /**
